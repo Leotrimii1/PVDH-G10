@@ -5,6 +5,9 @@
 Follow these steps to run the project and the Jupyter Notebook.
 
 ```bash
+
+# Reminder: Add Jupyter Extension on VS Code
+
 # Clone the repository
 git clone https://github.com/Leotrimii1/PVDH-G10.git
 cd PVDH-G10
