@@ -1,10 +1,9 @@
-## University of Prishtina  
-### Faculty of Computer and Software Engineering  
-### Master’s Program in Computer and Software Engineering  
+## Data preparation and visualization -  Global Mobile Phone Addiction
+### Introductory Information
+#### University of Prishtina - Faculty of Computer and Software Engineering  
+#### Master’s Program in Computer and Software Engineering  
 
 ---
-
-### Course: Data preparation and visualization 
 **Professor:** Dr.Sc. Mërgim H. HOTI
 ---
 
