@@ -1,4 +1,27 @@
-# PVDH-G10
+## University of Prishtina  
+### Faculty of Computer and Software Engineering  
+### Master’s Program in Computer and Software Engineering  
+
+---
+
+### Course: Data preparation and visualization 
+**Professor:** Dr.Sc. Mërgim H. HOTI
+---
+
+**Group:** 10  
+
+**Team Members:**  
+- Erza Bërbatovci  
+- Leotrim Halimi  
+- Rinor Ukshini  
+
+---
+
+### Dataset:  
+[Global Mobile Phone Addiction Dataset](https://www.kaggle.com/datasets/khushikyad001/global-mobile-phone-addiction-dataset)  
+Source: Kaggle — dataset containing mobile phone addiction survey data with demographic and behavioral information.  
+
+---
 
 ## Project Setup
 
