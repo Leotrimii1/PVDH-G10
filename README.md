@@ -55,3 +55,55 @@ pip install -r requirements.txt
 # VS Code will ask you to select a Python environment.
 # Select the interpreter that points to your virtual environment:
 # ./venv/bin/python
+
+
+This project focuses on **data pre-processing for preparing data for analysis**.  
+It covers the main stages of cleaning, transforming, and selecting data features before building machine learning models.
+
+---
+
+
+The following steps were completed in this project:
+
+1. **Data Collection**  
+   - Imported the dataset using `pandas`.
+
+2. **Data Type Definition and Quality Check**  
+   - Analyzed data types for each column.  
+   - Identified missing or incorrect values.
+
+3. **Data Integration, Aggregation, and Sampling**  
+   - Combined data sources if needed.  
+   - Selected data samples for testing and analysis.
+
+4. **Data Cleaning and Handling Missing Values**  
+   - Removed or filled empty (`NaN`) values.  
+   - Applied strategies to maintain dataset integrity.
+
+5. **Dimensionality Reduction and Feature Subset Selection**  
+   - Used methods like `SelectKBest`, `RFE`, and `RandomForestClassifier` to choose the most important features.
+
+6. **Feature Creation (Feature Engineering)**  
+   - Created and transformed variables to improve data quality and analysis.
+
+7. **Discretization and Binarization**  
+   - Converted numeric values into categories (intervals).  
+   - Applied binary transformations (True/False) where needed.
+
+8. **Data Transformation**  
+   - Normalized and standardized values using `MinMaxScaler` and `StandardScaler`.
+
+---
+
+## Technologies Used
+
+- Python 3.12  
+- pandas  
+- numpy  
+- matplotlib  
+- seaborn  
+- scikit-learn  
+
+---
+
+
