@@ -65,36 +65,35 @@ It covers the main stages of cleaning, transforming, and selecting data features
 
 The following steps were completed in this project:
 
-1. **Data Collection**  
+ **Data Collection**  
    - Imported the dataset using `pandas`.
 
-2. **Data Type Definition and Quality Check**  
+ **Data Type Definition and Quality Check**  
    - Analyzed data types for each column.  
    - Identified missing or incorrect values.
 
-3. **Data Integration, Aggregation, and Sampling**  
+ **Data Integration, Aggregation, and Sampling**  
    - Combined data sources if needed.  
    - Selected data samples for testing and analysis.
 
-4. **Data Cleaning and Handling Missing Values**  
+ **Data Cleaning and Handling Missing Values**  
    - Removed or filled empty (`NaN`) values.  
    - Applied strategies to maintain dataset integrity.
 
-5. **Dimensionality Reduction and Feature Subset Selection**  
+ **Dimensionality Reduction and Feature Subset Selection**  
    - Used methods like `SelectKBest`, `RFE`, and `RandomForestClassifier` to choose the most important features.
 
-6. **Feature Creation (Feature Engineering)**  
+ **Feature Creation (Feature Engineering)**  
    - Created and transformed variables to improve data quality and analysis.
 
-7. **Discretization and Binarization**  
+ **Discretization and Binarization**  
    - Converted numeric values into categories (intervals).  
    - Applied binary transformations (True/False) where needed.
 
-8. **Data Transformation**  
+ **Data Transformation**  
    - Normalized and standardized values using `MinMaxScaler` and `StandardScaler`.
 
 ---
-
 ## Technologies Used
 
 - Python 3.12  
