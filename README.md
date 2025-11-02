@@ -1,4 +1,4 @@
-## Data preparation and visualization -  Global Mobile Phone Addiction
+## Data preparation and visualization -  Efektet e përdorimit të telefonit në stresin dhe shëndetin mendor
 
 ## Introductory Information
 
