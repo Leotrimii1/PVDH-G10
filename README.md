@@ -553,24 +553,14 @@ Eksplorimi i te dhënave: statistika përmbledhëse, multivariante.
 
 Detektimi i outlier-ve është thelbësor për të identifikuar vlerat që devijojnë shumë nga pjesa tjetër e të dhënave dhe që mund të ndikojnë në mënyrë të pabarabartë në analizat statistike dhe modelet. Në këtë projekt janë përdorur katër metoda të ndryshme për një analizë të plotë multivariate:
 
-#### 1. Isolation Forest
- Isolation Forest izoloi outlier-ët duke i trajtuar si vlera që ndahen më shpejt në një model pyjor binar.
-```python
-numeric_columns = df.select_dtypes(include=['float64', 'int64']).columns
-numeric_data = df[numeric_columns]
 
-iso_forest = IsolationForest(contamination=0.05, random_state=42)
-df['Anomali'] = iso_forest.fit_predict(numeric_data)
+#### 1. DBSCAN Clustering
 
-normal_data = df[df['Anomali'] == 1]
-anomalies = df[df['Anomali'] == -1]
-```
-
-➤ 1 = normal, -1 = outlier
-
-#### 2. DBSCAN Clustering
 
 DBSCAN identifikon outlier-at si pika që nuk përkasin në asnjë kluster ku kluster = -1 konsiderohet outlier
+
+<img width="1484" height="1141" alt="image" src="https://github.com/user-attachments/assets/8357a071-8b8e-4f60-9e41-0f830801eaa4" />
+
 ```python
 scaler = StandardScaler()
 data_scaled = scaler.fit_transform(data_numerical)
@@ -583,8 +573,11 @@ df['Cluster'] = clusters
 
 ➤ 
 
-###$ 3. K-Means Distance Outliers
+###$ 2. K-Means Distance Outliers
 Outliers identifikohen sipas distancës nga qendrat e klusterëve ku instancat më larg qendrës së klusterit shënohen si outlier
+
+<img width="1592" height="1526" alt="image" src="https://github.com/user-attachments/assets/1249ac94-e51f-4b91-89c3-f6d415df072f" />
+
 ```python
 distances = kmeans.transform(scaled_features)
 min_distance = np.min(distances, axis=1)
@@ -593,9 +586,13 @@ threshold = np.percentile(min_distance, 90)
 df['Outlier'] = min_distance > threshold
 ```
 
-###$ 4. Z-Score Statistical Outliers
+###$ 3. Z-Score Statistical Outliers
 
 Z-Score është metodë statistike klasike, |Z| > 3 konsiderohet vlerë ekstreme
+
+<img width="1488" height="3422" alt="image" src="https://github.com/user-attachments/assets/7f8feed0-bb20-4fd9-9f9b-17946e425879" />
+
+
 ```python
 z_scores = np.abs(stats.zscore(data_numeric, nan_policy='omit'))
 outliers_mask = (z_scores > 3).any(axis=1)
@@ -617,6 +614,8 @@ df_clean = df[~outliers_mask].reset_index(drop=True)
 EDA u krye për të kuptuar shpërndarjen, varësitë dhe strukturën multivariate të dataset-it.
 
 ### 1. Statistikat përmbledhëse
+
+
 ```python
 numeric_data.describe().transpose()
 ```
@@ -626,6 +625,8 @@ Përfshin: Mesatare, Medianë, Devijim standard, Percentilat (25%, 50%, 75%)
 ### 2. Histogramet + Normal Distribution Fit
 
 Për secilën kolonë:
+<img width="983" height="19484" alt="image" src="https://github.com/user-attachments/assets/d0814d5d-9de7-4dd9-acf1-8d1da021a836" />
+
 ```python
 data.hist(bins=30)
 mu, std = norm.fit(data)
@@ -635,11 +636,14 @@ Vizualizim i shpërndarjes dhe tendencës.
 
 ### 3. Heatmap i korrelacioneve
 Shfaq varësitë midis variablave numerikë.
+
+<img width="2147" height="1934" alt="image" src="https://github.com/user-attachments/assets/eaeef9a7-4f4f-435c-8b99-44112d6a4094" />
 ```python
 sns.heatmap(numeric_data.corr(), cmap='coolwarm', annot=True)
 ```
 
 ### 4. PCA – Projectimi në 2 dimensione
+<img width="846" height="550" alt="image" src="https://github.com/user-attachments/assets/fdd5f504-f7b9-459e-94b8-e2723cef0255" />
 
 ```python
 scaled_data = scaler.fit_transform(numeric_data.fillna(0))
@@ -648,6 +652,8 @@ pca_result = PCA(n_components=2).fit_transform(scaled_data)
 plt.scatter(pca_result[:,0], pca_result[:,1])
 ```
 ### 5. Clustering Hierarkik (Dendrogram)
+<img width="1384" height="584" alt="image" src="https://github.com/user-attachments/assets/498e5705-693b-4f95-8c23-9ee5a1f1176c" />
+
 ```python
 linkage_matrix = linkage(scaled_data, method='ward')
 dendrogram(linkage_matrix)
@@ -658,6 +664,8 @@ Hierarkia e grupimeve vizualizohet në formën e pemës.
 # Balancimi i të dhënave (SMOTE)
 
 Dataset-i ishte i pabalancuar për kolonën Stress_Category, prandaj u përdor SMOTE:
+<img width="1384" height="584" alt="image" src="https://github.com/user-attachments/assets/75f6d6f7-a0a3-45dc-8639-6da02b20e473" />
+
 ```python
 smote = SMOTE(random_state=42)
 X_resampled, y_resampled = smote.fit_resample(X, y)
