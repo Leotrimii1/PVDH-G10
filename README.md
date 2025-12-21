@@ -678,3 +678,127 @@ Kjo rrit numrin e mostrave minoritare dhe e balancon datasetin.
 df.to_csv('dataset/mobile_addiction_data_processed2.csv', index=False)
 ```
 
+
+## FAZA 3
+
+Në këtë fazë të projektit, qëllimi ka qenë vizualizimi dhe analiza e të dhënave të gjeneruara për të kuptuar efektet e përdorimit të telefonit në stres dhe shëndetin mendor.
+Për këtë qëllim është përdorur Metabase si vegël për vizualizimin e të dhënave, e cila mundëson krijimin e grafikëve statikë, interaktivë dhe shumë-dimensionalë.
+
+Përmes vizualizimeve të ndryshme, janë analizuar:
+
+modelet e përdorimit të telefonit,
+
+llojet e aktiviteteve digjitale,
+
+niveli i stresit,
+
+si dhe faktorë mbështetës si gjumi dhe aktiviteti fizik.
+
+Rezultatet tregojnë se jo vetëm sasia, por edhe lloji i përdorimit të telefonit ka ndikim në nivelin e stresit dhe mirëqenien mendore, ndërsa vizualizimi i të dhënave ndihmon në interpretimin më të qartë të këtyre marrëdhënieve.
+
+### Llojet e përdorimit të telefonave sipas shteteve
+
+Në këtë grafik paraqiten llojet kryesore të përdorimit të telefonit sipas shteteve, duke përfshirë përdorimin për rrjete sociale, gaming, streaming, komunikim, punë dhe aktivitet fizik.
+Qëllimi i këtij vizualizimi është të tregojë se përdorimi i telefonit nuk është homogjen, por ndryshon në varësi të kontekstit shoqëror dhe kulturor të secilit shtet.
+
+Edhe pse koha totale e përdorimit të telefonit është relativisht e ngjashme ndërmjet shteteve, vërehen dallime të qarta në mënyrën se si shpërndahen këto orë. Disa shtete kanë përdorim më të lartë për rrjete sociale dhe streaming, ndërsa të tjera shfaqin më shumë përdorim për punë ose aktivitet fizik.
+Kjo tregon se lloji i përdorimit është po aq i rëndësishëm sa sasia e përdorimit, sidomos kur analizohet ndikimi në shëndetin mendor.
+
+<img width="2096" height="1120" alt="image" src="https://github.com/user-attachments/assets/b8e0fa2f-757b-4ede-91ea-c7e1ff13daae" />
+
+
+
+### Krahasimi i përdorimit mesatar të telefonit ndërmjet shteteve
+
+Ky grafik fokusohet në kohën mesatare ditore të përdorimit të telefonit për secilin shtet.
+Rezultatet tregojnë se shumica e shteteve kanë një përdorim mesatar relativisht të afërt, rreth disa orëve në ditë.
+
+Kjo sugjeron se përdorimi intensiv i telefonit është një fenomen global, dhe jo i kufizuar vetëm në shtete të caktuara.
+Megjithatë, ky grafik duhet të interpretohet në kombinim me grafikun paraprak, sepse edhe nëse koha mesatare është e ngjashme, lloji i aktiviteteve që kryhen në telefon ndryshon ndjeshëm, gjë që mund të ketë ndikime të ndryshme në stres dhe shëndetin mendor.
+
+<img width="1302" height="587" alt="image" src="https://github.com/user-attachments/assets/21488450-41c3-4ac9-baa3-ea131a8bf222" />
+
+
+
+
+### Niveli mesatar i stresit sipas moshës
+
+Ky vizualizim paraqet nivelin mesatar të stresit sipas moshës, duke treguar se stresi nuk shpërndahet në mënyrë të njëtrajtshme në të gjitha grupmoshat.
+Vërehen periudha ku niveli i stresit është më i lartë, veçanërisht në moshat aktive profesionalisht.
+
+Këto dallime mund të lidhen me faktorë si:
+
+    përgjegjësitë profesionale,
+
+    presioni social,
+
+    dhe përdorimi intensiv i teknologjisë.
+
+Ky grafik ndihmon në kuptimin e faktit se stresi është një fenomen kompleks, i ndikuar nga mosha dhe mënyra e jetesës, ku përdorimi i telefonit luan një rol të rëndësishëm.
+
+<img width="1298" height="511" alt="image" src="https://github.com/user-attachments/assets/54b3c3d2-03f8-4322-a706-2452aaaf14eb" />
+
+
+### Shpërndarja e kohës ditore të përdorimit të telefonit
+
+Histogrami tregon shpërndarjen e kohës ditore të përdorimit të telefonit për të gjithë pjesëmarrësit.
+Shumica e përdoruesve përqendrohen rreth një intervali mesatar të përdorimit, ndërsa një numër më i vogël shfaq përdorim shumë të ulët ose shumë të lartë.
+
+Ky vizualizim është i rëndësishëm sepse tregon se:
+
+    përdorimi ekstrem i telefonit ekziston,
+
+    por nuk është dominues.
+
+Histogrami shërben si bazë për analizat e mëtejshme, duke ndihmuar në kuptimin e strukturës së të dhënave dhe sjelljeve të përgjithshme të përdorimit.
+
+<img width="1338" height="587" alt="image" src="https://github.com/user-attachments/assets/93f6614d-129e-450a-890f-86b885001769" />
+
+
+### Lidhja midis përdorimit të telefonit dhe nivelit të stresit
+
+Ky grafik analizon marrëdhënien ndërmjet kohës ditore të përdorimit të telefonit dhe nivelit të stresit.
+Rezultatet tregojnë një tendencë të qartë ku rritja e kohës së përdorimit të telefonit shoqërohet me rritje të nivelit të stresit.
+
+Edhe pse lidhja nuk është perfekte për çdo individ, trendi i përgjithshëm është i dukshëm, duke sugjeruar se përdorimi i zgjatur i telefonit mund të kontribuojë në rritjen e stresit.
+Ky vizualizim mbështet idenë se balanca në përdorimin e teknologjisë është e rëndësishme për mirëqenien mendore.
+
+<img width="1356" height="588" alt="image" src="https://github.com/user-attachments/assets/1d2dc6f4-ad41-4a24-850f-48ab88977a81" />
+
+### Llojet pasive të përdorimit dhe niveli i stresit
+
+
+Ky vizualizim shumë-dimensional fokusohet në llojet pasive të përdorimit të telefonit, si gaming dhe rrjetet sociale, dhe lidhjen e tyre me nivelin e stresit.
+Krahasuar me aktivitete më aktive, këto forma përdorimi shfaqen më shpesh të lidhura me nivele më të larta stresi.
+
+Rezultatet sugjerojnë se jo çdo përdorim i telefonit ka të njëjtin ndikim.
+Përdorimet pasive, që shpesh shoqërohen me qëndrime sedentare dhe ekspozim të vazhdueshëm ndaj përmbajtjes digjitale, mund të kenë ndikim më negativ në shëndetin mendor.
+<img width="1350" height="676" alt="image" src="https://github.com/user-attachments/assets/2df40e08-1835-4753-bbbb-143fb69b6c07" />
+
+
+### Përmbledhje e treguesve kryesorë
+
+Ky seksion paraqet treguesit kryesorë përmbledhës të dataset-it, duke përfshirë:
+
+    kohën mesatare ditore të përdorimit të telefonit,
+
+    nivelin mesatar të stresit,
+
+    orët mesatare të gjumit,
+
+    numrin total të pjesëmarrësve.
+
+Këta tregues ndihmojnë në krijimin e një pamjeje të përgjithshme dhe shërbejnë si kontekst për interpretimin e grafikëve të tjerë.
+Ata tregojnë se kampioni është i mjaftueshëm për të nxjerrë përfundime domethënëse mbi përdorimin e telefonit dhe shëndetin mendor.
+
+<img width="657" height="528" alt="image" src="https://github.com/user-attachments/assets/2135fa03-2b0c-45a7-819c-46df7033278b" />
+
+# PËRMBLEDHJE FINALE
+
+
+Ky projekt demonstroi se përmes vizualizimit të të dhënave është e mundur të kuptohen më mirë modelet e përdorimit të telefonit dhe ndikimi i tyre në stres dhe shëndetin mendor.
+Analiza tregoi se përdorimi i telefonit është një pjesë e pandashme e jetës moderne, por mënyra se si përdoret ka ndikim të drejtpërdrejtë në mirëqenien psikologjike.
+
+Përfundimisht, rezultatet sugjerojnë se balanca midis përdorimit digjital dhe aktiviteteve aktive është thelbësore për ruajtjen e shëndetit mendor, dhe se vizualizimi i të dhënave është një mjet i fuqishëm për të nxjerrë këto njohuri në mënyrë të qartë dhe të kuptueshme.
+
+
